@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    max-width: 500px;
+}
+
+img{
+    height: 70px;
+    width: 70px;
+    object-fit: cover;    
+    border-radius: 100%;
+    transition: 0.2s;
+}
+
+.FB:hover{
+    transform: scale(1.7) translateX(-15px);
+    border-radius: 0;
+    box-shadow: 2px 2px 2px 0 black;
+}
+
+.Jo:hover{
+    transform: scale(1.7) translateX(15px);
+    border-radius: 0;
+    box-shadow: 2px 2px 2px 0 black;
+}
+
+.chat{
+    display: flex;
+    gap: 20px;
+    margin: 40px;
+    align-items: center;
+}
+
+.he{
+    flex-direction: row-reverse;
+}
+
+p{
+    padding: 20px;
+    position: relative;
+    animation: 0.3s;
+}
+
+.she p{
+    background: rgb(221, 221, 221);
+    border-radius: 20px 20px 20px 0;
+    transition: 0.3s;
+}
+
+.he p{
+    background: rgb(59, 192, 111);
+    text-align: right;
+    color: white;
+    border-radius: 20px 20px 0 20px;
+    transition: 0.3s;
+}
+
+
+.one p::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -9px; 
+    top: 45%;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;  
+    border-right:10px solid rgb(221, 221, 221);
+    transition: 0.3s;
+}
+
+.two p:after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: -9px; 
+    top: 45%;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;  
+    border-left:10px solid rgb(59, 192, 111);
+    transition: 0.3s;
+    }
+
+.three p:before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -9px; 
+    top: 40%;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;  
+    border-right:10px solid rgb(221, 221, 221);
+    transition: 0.3s;
+    }
+
+.four p:after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: -9px; 
+    top: 40%;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;  
+    border-left:10px solid rgb(59, 192, 111);
+    transition: 0.3s;
+    }
+
+/* hoveriai */
+    p:hover{
+        background: black;
+        color: white;
+        /* font-style: italic; */
+    }
+
+    p:hover::before{
+        border-right:10px solid black;
+    }
+     
+    p:hover::after{
+        border-left:10px solid black;
+     }     
